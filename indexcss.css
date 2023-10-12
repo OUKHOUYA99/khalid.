@@ -1,0 +1,321 @@
+:root {
+    --primaryColor: #4ca0ff;
+    --secondaryColor: #f7d4bc;
+    --lightColor: #ffff;
+    --bgColor-1: #272c30;
+    --bgColor-2: #2d393b;
+    --paddind: 8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+span {
+    color: var(--primaryColor);
+}
+p{
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+h1{
+    font-size: 2.65rem;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondaryColor);
+}
+h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+h2 a{
+    font-size: 2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+    padding-right: var(--paddind);
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--lightColor);
+    transition: 0.4s;
+}
+/* ----------------------------------------------------------
+--------------------------HOME SECTION-----------------------
+------------------------------------------------------------- */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/indexBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home nav {
+    padding-top: 2.8rem;
+    padding-left: var(--paddind);
+    padding-right: var(--paddind);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .imag {
+    display: none;
+}
+.home .content {
+    flex-grow: 1;
+    padding: var(--paddind);
+    display: flex;
+    align-items: center;
+}
+.home .container-text{
+    padding-top: 4rem;
+    position: relative;
+    bottom: 70px;
+}
+.home .container-text .batten{
+    padding-top: 5rem;
+}
+.home .social{
+    margin-top: 3.5rem;
+    
+}
+.home .social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    
+}
+.home .social img:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+/* ----------------------------------------------------------
+-------------------------ABOUT SECTION-----------------------
+------------------------------------------------------------- */
+.about{
+    background-color: var(--bgColor-2);
+    padding: var(--paddind);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .container-images{
+    width: 45%;
+}
+.about .container-images img{
+    width: 90%;
+}
+.about .container-txt{
+    width: 35%;
+}
+/* ----------------------------------------------------------
+------------------------SKILLS SECTION-----------------------
+------------------------------------------------------------- */
+.skills{
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--paddind);
+}
+.text-center{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 250px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    margin-top: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+.card i{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primaryColor);
+    margin: 2rem;
+}
+.card a{
+    color: var(--lightColor);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.card a:hover{
+    color: var(--primaryColor);
+    transition: 0.4s;
+ }
+ /* ----------------------------------------------------------
+-----------------------LOCATION SECTION-----------------------
+-------------------------------------------------------------- */
+.maps{
+    background-color: var(--bgColor-2);
+    display: flex;
+    justify-content: space-between;
+}
+.adresse{
+    text-align: center;
+    padding: 8%;
+}
+.adresse h1{
+    padding-bottom: 15%;
+}
+.adresse p{
+    font-size: x-large;
+}
+.footer{
+    background-color: var(--bgColor-1);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+}
+.footer .contact{
+    background-color: var(--bgColor-1);
+    display: flex;
+    justify-content: space-between;    
+}
+.footer .contact i{
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    margin: 0.3rem;
+    padding-left: 3rem;
+}
+ /* ----------------------------------------------------------
+-----------------------MEDIA QUERIES-----------------------
+-------------------------------------------------------------- */
+@media only screen and (max-width: 1245px) {
+    .container-text{
+        padding-top: 6%;
+    }
+    .container-text h1{
+        font-size: x-large;
+    }
+    .home .imag{
+        display: none;
+    }
+    .adresse h1{
+        font-size: xx-large;
+    }
+}
+@media only screen and (max-width: 850px) {
+        .home nav {
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: center;   
+        }
+        .home {
+            background-image: none;
+        }
+        .home .imag {
+            display: grid;
+            padding-left: 15rem;
+        }
+        .home .imag img{
+            width: 250px;
+        }
+        .home .content{
+            padding-top: 0rem;
+        }
+        .about {
+            display: grid;
+            text-align: center;
+        }
+        .about .container-images{
+            display: flex;
+            justify-content: center;
+            width: 75%;
+            padding-left: 12rem;
+        }
+        .about .container-txt{
+            width: 100%;
+        }
+        .about .container-txt h5{
+            font-size: xx-large;
+        }
+        .about .container-txt p{
+            font-size: large;
+        }
+        .box{
+            display:inline-table;
+            justify-content: space-around;
+            padding: 2rem;
+            
+        }
+        .card{
+            width: 280px;
+            background-color: var(--bgColor-2);
+            border-radius: 10px;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 2%;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-bottom: 3%;
+        }
+        .skills{
+            display: grid;
+            justify-content: center;
+        }
+        .maps{
+            display: grid;
+            justify-content: center;
+        }
+        .adresse h1{
+            font-size: 2.5rem;
+        }
+        .footer{
+            background-color: var(--bgColor-1);
+            display: grid;
+            padding-top: 0.5rem;
+            padding-left: 0%;
+        }
+        .footer .contact i{
+            padding-left: 3rem;
+        }
+        .footer .copyright{
+            display: none;
+        }
+}
+@media only screen and (max-width: 850px){
+    .home .imag {
+        display: grid;
+        padding-left: 15rem;
+    }
+    .home .imag img{
+        width: 200px;
+    }
+}
