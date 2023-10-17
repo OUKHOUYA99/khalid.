@@ -201,8 +201,10 @@ h2 a{
 .footer{
     background-color: var(--bgColor-1);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 0.5rem;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 .footer .contact{
     background-color: var(--bgColor-1);
@@ -215,7 +217,7 @@ h2 a{
 }
 .footer .contact .mail{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .footer .contact i{
     font-size: 1.5rem;
@@ -322,6 +324,93 @@ h2 a{
         .adresse p{
             font-size: 1.5rem;
         }
+        .footer{
+            background-color: var(--bgColor-1);
+            display: grid;
+            justify-content: space-around;
+            padding-top: 0.5rem;
+            padding-left: 0%;
+        }
+        .footer .contact i{
+            padding-left: 0rem;
+        }
+        .footer .copyright{
+            display: none;
+        }
+    }
+
+@media only screen and (max-width: 600px){
+        .home nav {
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+            display: flex;
+            justify-content: center;   
+        }
+        .home {
+            background-image: none;
+        }
+        .home .imag {
+            display: grid;
+            justify-content: center;
+            padding: 2%;
+        }
+        .home .imag img{
+            width: 200px;
+        }
+        .home .content{
+            padding: 1rem;
+        }
+        .about {
+            display: grid;
+            justify-items: center;
+            padding: 2%;
+            width: 100%;
+            height: 100vh;
+        }
+        .about .container-txt{
+            text-align: center;
+            width: 80%;
+            height: 50vh;
+        }
+        .box{
+            display:inline-table;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+        .card{
+            width: 280px;
+            background-color: var(--bgColor-2);
+            border-radius: 10px;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 2%;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-bottom: 3%;
+        }
+        .skills{
+            display: grid;
+            justify-content: center;
+        }
+        .maps{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            padding: 2%;
+        }
+        .maps .location{
+            display: flex;
+            justify-content: center;
+        }
+        .maps iframe{
+            width: 200%;
+            height: 60vh;
+        }
+        .adresse h1{
+            font-size: 3rem;
+        }
+        .adresse p{
+            font-size: 1.5rem;
         }
         .footer{
             background-color: var(--bgColor-1);
@@ -336,104 +425,82 @@ h2 a{
         .footer .copyright{
             display: none;
         }
-
-@media only screen and (max-width: 600px){
-    .home nav {
-        padding-top: 1rem;
-        padding-bottom: 0rem;
-        display: flex;
-        justify-content: center;   
     }
-    .home {
-        background-image: none;
+@media only screen and (max-width: 320px){
+        .footer .contact {
+            display: grid;
+            justify-content: space-between;
+            font-size: xx-small;
+            width: 80%;
+            height: 10vh;
+        }
+        .footer .contact .phone{
+            justify-content: left;
+        }
+        .footer .contact .phone p{
+        font-size: 0.95rem;
+        }
+        .footer .contact .mail p{
+            font-size: 0.95rem;
+        }    
+        .maps iframe{
+            width: 100%;
+            height: 50vh;
+        }
+        .adresse h1{
+            font-size: 2.2rem;
+        }
+        .adresse p{
+            font-size: 1rem;
+        }
+        .skills{
+            width: 100%;
+        }
+        .card{
+            width: 220px;
+            padding: 0.5rem 0.5rem;
+            margin-top: 4%;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-bottom: 2%;
+        }
+        .about {
+            width: 100%;
+            height: 110vh;
+        }
+        .about .container-txt{
+            width: 100%;
+            height: 800vh;
+        }
+        .home .imag {
+            display: grid;
+            justify-content: right;
+            padding: 3%;
+        }
+        .home .imag img{
+            width: 150px;
+        }
+        .home .content{
+            padding: 0.5rem;
+        }
+        .home {
+            width: 100%;
+            height: 120vh;
+        }
+        .home .container-text .batten{
+            padding-top: 2.5rem;
+        }
+        .home .social{
+            padding-top: 0.5rem;
+            
+        }
+        .home nav {
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .home nav h2 a{
+            font-size: x-large;
+        }
     }
-    .home .imag {
-        display: grid;
-        justify-content: center;
-        padding: 2%;
-    }
-    .home .imag img{
-        width: 200px;
-    }
-    .home .content{
-        padding: 1rem;
-    }
-    .about {
-        display: grid;
-        justify-items: center;
-        padding: 2%;
-        width: 100%;
-        height: 100vh;
-    }
-    .about .container-txt{
-        text-align: center;
-        width: 80%;
-        height: 50vh;
-    }
-    .box{
-        display:inline-table;
-        justify-content: space-around;
-        padding: 2rem;
-    }
-    .card{
-        width: 280px;
-        background-color: var(--bgColor-2);
-        border-radius: 10px;
-        padding: 2rem 1rem;
-        text-align: center;
-        margin-top: 2%;
-        margin-right: 2%;
-        margin-left: 2%;
-        margin-bottom: 3%;
-    }
-    .skills{
-        display: grid;
-        justify-content: center;
-    }
-    .maps{
-        display: grid;
-        justify-content: center;
-        text-align: center;
-        padding: 2%;
-    }
-    .maps .location{
-        display: flex;
-        justify-content: center;
-    }
-    .maps iframe{
-        width: 200%;
-        height: 60vh;
-    }
-    .adresse h1{
-        font-size: 3rem;
-    }
-    .adresse p{
-        font-size: 1.5rem;
-    }
-    .footer{
-        background-color: var(--bgColor-1);
-        display: grid;
-        justify-content: space-around;
-        padding-top: 0.5rem;
-        padding-left: 0%;
-    }
-    .footer .contact i{
-        padding-left: 0rem;
-    }
-    .footer .copyright{
-        display: none;
-    }
-}
-@media only screen and (max-width: 600px){
-    .footer{
-       display: grid;
-       justify-content: space-around;
-    }
-    .footer .contact {
-        display: grid;
-    }
-    .footer .contact .phone{
-        display: flex;
-        justify-content: left;
-    }
-}
