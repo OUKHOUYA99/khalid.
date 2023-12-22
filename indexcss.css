@@ -6,6 +6,9 @@
     --bgColor-2: #2d393b;
     --paddind: 8%;
 }
+body{
+    user-select: none;
+}
 *{
     margin: 0;
     padding: 0;
