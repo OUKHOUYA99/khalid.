@@ -130,15 +130,14 @@ h2 a{
     background-color: var(--bgColor-2);
     padding: var(--paddind);
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 .about .container-images{
     width: 50%;
-    align-items: top;
+    padding-top: 5rem;
 }
 .about .container-images img{
-    width: 120%;
+    width: 100%;
 }
 .about .container-txt{
     width: 50%;
